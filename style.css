@@ -74,7 +74,7 @@ a:hover {
 
 #index-title .title{
     font-family: 'CustomFont';
-    font-size: 9vw;
+    font-size: clamp(10rem,3rem, 9vw);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +102,7 @@ a:hover {
 .sub-title{
     display: flex;
     justify-content: center;
-    font-size: 4rem;
+    font-size: clamp(2rem, 4vw, 6rem);
     font-family:'CustomFont';
     margin-top: 20px;
 }
