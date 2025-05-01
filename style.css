@@ -47,11 +47,11 @@ html {
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items:center;
     flex-grow: 1;
     margin-right: 20px;
-    gap: 30px;
+    gap: 70px;
 }
 
 a { 
@@ -59,10 +59,10 @@ a {
     text-decoration: none;    
     color: rgb(222, 222, 222);
     font-family: 'Arial Narrow Bold', sans-serif ;
-    font-size:max(1.05vw, 1.75vw);
+    font-size:1.75vw;
     font-weight: bolder;
     padding: 5px;
-    border-radius: 235px;
+    border-radius: 5px;
     margin: 0 6px;
 }
 
@@ -72,7 +72,7 @@ a:hover {
     box-shadow: 0 0 5px beige, 0 0 10px;
 }
 
-#index-title .title{
+#index-title .title{ 
     font-family: 'CustomFont';
     font-size: clamp(4rem,9em,10vw);
     display: flex;
@@ -88,8 +88,15 @@ a:hover {
     position: relative;
 }
 
-/*outline and mask*/
-#index-title .title, .sub-title {
+.sub-title{
+    display: flex;
+    justify-content: center;
+    font-size: clamp(2rem, 4vw, 6rem);
+    font-family:'CustomFont';
+    margin-top: 20px;
+}
+
+#index-title .title {
     -webkit-text-stroke: 2px black;    
     background: url(images/scp-1600-x-900-background-gaf731zw3cfsxf3d.jpg) center;
     background-clip: text;
@@ -99,17 +106,9 @@ a:hover {
     position: relative;
 }
 
-.sub-title{
-    display: flex;
-    justify-content: center;
-    font-size: clamp(2rem, 4vw, 6rem);
-    font-family:'CustomFont';
-    margin-top: 20px;
-}
-
 .subject h2 {
     font-family: 'CustomFont';
-    font-size: clamp(2rem, 5rem, 6rem);
+    font-size: 8vw;
     width: 100%;
     height: 100%;
 }
@@ -131,7 +130,7 @@ a:hover {
     align-items: center;
     margin: 20px 10px 20px;
     font-family: 'CustomFont';
-    font-size: clamp(2rem, 3rem, 6rem);
+    font-size: 3vw;
 }
 
 .subject .id {
@@ -145,18 +144,24 @@ a:hover {
 
 .main {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+    flex-direction: column;    
+    height: 100vw;
     margin: 15px;
+}
+
+.main .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .subject {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 50px;
-    margin: 50px 150px 0px;
-    caret-color: transparent;
+    margin-top: 50px;
 }
 
 .description, .containment {
