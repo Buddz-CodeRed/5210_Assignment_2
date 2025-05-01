@@ -1,0 +1,205 @@
+:root {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url(fonts/Bruno_Ace_SC/BrunoAceSC-Regular.ttf)
+}
+
+html {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+}
+
+.container .desc-container, .cont-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 12px 8px 12px 2px;
+    background-image: url(images/honey-1810147.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    flex-grow: 1;
+    margin-right: 20px;
+    gap: 30px;
+}
+
+a { 
+    position: relative;    
+    text-decoration: none;    
+    color: rgb(222, 222, 222);
+    font-family: 'Arial Narrow Bold', sans-serif ;
+    font-size:max(1.05vw, 1.75vw);
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 6px;
+}
+
+a:hover {
+    background-color: 23%;
+    border-color: solid beige;
+    box-shadow: 0 0 5px beige, 0 0 10px;
+}
+
+#index-title .title {
+    font-family: 'CustomFont';
+    font-size: 9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    caret-color: transparent;
+}
+
+/*outline and mask*/
+#index-title .title {
+    -webkit-text-stroke: 2px black;    
+    background: url(images/scp-1600-x-900-background-gaf731zw3cfsxf3d.jpg) center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mask-image: url(images/scp-1600-x-900-background-gaf731zw3cfsxf3d.jpg);
+    isolation: isolate;
+    position: relative;
+}
+
+.subject h2 {
+    font-family: 'CustomFont';
+    font-size: 6rem;
+    width: 100%;
+    height: 100%;
+}
+
+.subject h2 {
+    margin: 0px;
+    -webkit-text-stroke: 2px black;    
+    background: url(images/scp-1600-x-900-background-gaf731zw3cfsxf3d.jpg) center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mask-image: url(images/scp-1600-x-900-background-gaf731zw3cfsxf3d.jpg);
+    isolation: isolate;
+    position: relative;
+}
+
+.subject .grade, h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px 20px;
+    font-family: 'CustomFont';
+    font-size: 3vw;
+}
+
+.subject .id {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/* MAIN AREA */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 15px;
+}
+
+.subject {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.description, .containment {
+    display: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.description .desc-container, .containment .cont-container {
+    padding: 15px;
+    margin: 0px 10px 10px 0px;
+    border-radius: 12px;
+    box-shadow: 12px 8px 12px 2px;
+}
+
+p {
+    margin: 0px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 50px 0px 20px;    
+}
+
+.read {
+    margin-left: 25px;
+    background: #ca3eed;
+    background: linear-gradient(0deg,rgba(202, 62, 237, 1) 0%, rgba(45, 139, 253, 1) 100%);
+    border: 2px solid px black;
+    border-radius: 25px;
+    color: #efefef;
+    width: 125px;
+    height: 30px;
+    box-shadow: -6px -6px 10px #f9f9f9, 6px 6px 10px #00000026;
+}
+
+.read:hover {
+    box-shadow: 2px 2px 2px #f9f9f9, -2px -2px 2px #00000026;
+}
+
+@media screen and (max-width: 840px){
+    .logo{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #index-title .title{
+        font-size: clamp(3.3rem, 7vw, 6rem);
+    }
+
+    .navbar{
+        gap: 0px;
+        margin-right: 5px;
+    }
+
+    a{
+        font-size: 14px;
+ 
