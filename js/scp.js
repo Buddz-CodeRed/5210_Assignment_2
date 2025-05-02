@@ -68,7 +68,7 @@ let voices = [];
 
 // Function to read the scp with a word limit
 function readDescription(description) {
-    const maxWords = 40; // Set the word limit
+    const maxWords = 50; // Set the word limit
     const words = description.split(' ');
     const limitedDescription = words.slice(0, maxWords).join(' ');
 
